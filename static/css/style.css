@@ -85,7 +85,8 @@ body
 main
 {
 	width: 50vw;
-	margin-bottom: 5em;
+	margin-bottom: 2em;
+	position: relative;
 }
 
 section
@@ -153,9 +154,9 @@ section
 
 #edit-btn
 {
-	position: fixed;
-	bottom: 12vh;
-	right: 18vw;
+	position: sticky;
+	bottom: 4vh;
+	left: 100vw;
 	background-color: white;
 	padding: 0.85em 1em;
 	border-radius: 30px;
@@ -225,11 +226,6 @@ footer
 	{
 		width: 80vw;
 	}
-
-	#edit-btn
-	{
-		right: 2vw;
-	}
 }
 
 @media screen and (max-width: 420px)
@@ -282,11 +278,5 @@ footer
 	.exp-company
 	{
 		font-size: 16px;
-	}
-
-	#edit-btn
-	{
-		bottom: 12vh;
-		right: 4vw;
 	}
 }
