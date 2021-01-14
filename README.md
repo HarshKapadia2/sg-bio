@@ -2,6 +2,6 @@
 
 A sample page for a bio.
 
-*Hosted at https://sg-bio.herokuapp.com*
+*Hosted at https://harshkapadia2.github.io/sg-bio/*
 
 Design inspiration: [Aayush Pal](https://www.linkedin.com/in/aayush-pal/)
