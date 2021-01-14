@@ -180,6 +180,25 @@ footer
 	text-align: center;
 }
 
+@media screen and (orientation: landscape) and (max-width: 830px)
+{
+	#backdrop
+	{
+		height: 23vh;
+	}
+	
+	#card img
+	{
+		height: 20vh;
+		width: 10vw;
+	}
+
+	footer
+	{
+		font-size: 14px;
+	}
+}
+
 @media screen and (max-width: 850px)
 {
 	#card
