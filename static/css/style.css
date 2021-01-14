@@ -51,11 +51,6 @@ img
 	border-radius: 5px;
 }
 
-#details
-{
-	margin-left: 0.5em;
-}
-
 #name
 {
 	font-size: 30px;
@@ -240,9 +235,19 @@ footer
 		width: 90vw;
 	}
 
+	section
+	{
+		margin-top: 3em;
+	}
+
 	.section-title
 	{
 		font-size: 15px;
+	}
+
+	.exp
+	{
+		margin: 1.2em 0;
 	}
 
 	.exp-title
