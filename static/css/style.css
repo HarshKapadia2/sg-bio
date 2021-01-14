@@ -36,7 +36,7 @@ body
 	margin-top: 5vh;
 	margin-bottom: 2vh;
 	border-radius: 5px;
-	background-color: #fafafa;
+	background-color: white;
 	display: flex;
 	align-items: center;
 	box-shadow: 0 2px 5px #bdbdbd;
@@ -94,6 +94,18 @@ main
 section
 {
 	margin-top: 2.5em;
+}
+
+#summary-section
+{
+	margin: 0.5em 0;
+}
+
+#summary
+{
+	background-color: #eeeeee;
+	padding: 0.5em;
+	border-radius: 5px;
 }
 
 .section-title-grp
