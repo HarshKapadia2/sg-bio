@@ -54,12 +54,14 @@ body
 #name
 {
 	font-size: 30px;
+	word-break: break-all;
 }
 
 #e-mail
 {
 	font-size: 18px;
 	margin-bottom: 1em;
+	word-break: break-all;
 }
 
 #cta-btn-grp
@@ -153,8 +155,8 @@ section
 {
 	position: fixed;
 	bottom: 12vh;
-	right: 13vw;
-	background-color: #eeeeee;
+	right: 18vw;
+	background-color: white;
 	padding: 0.85em 1em;
 	border-radius: 30px;
 	border: 1px solid #eeeeee;
