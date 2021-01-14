@@ -42,7 +42,7 @@ body
 	box-shadow: 0 2px 5px #bdbdbd;
 }
 
-img
+#card img
 {
 	width: 15vh;
 	height: 15vh;
@@ -155,8 +155,8 @@ section
 	bottom: 12vh;
 	right: 13vw;
 	background-color: #eeeeee;
-	padding: 0.85em 0;
-	border-radius: 200px;
+	padding: 0.85em 1em;
+	border-radius: 30px;
 	border: 1px solid #eeeeee;
 	box-shadow: 0 2px 5px #bdbdbd;
 	cursor: pointer;
