@@ -210,12 +210,27 @@ footer
 	
 	#calendar-btn, #e-mail-btn
 	{
-		font-size: 13px;
+		font-size: 14px;
 	}
 	
 	main
 	{
 		width: 90vw;
+	}
+
+	.section-title
+	{
+		font-size: 15px;
+	}
+
+	.exp-title
+	{
+		font-size: 25px;
+	}
+
+	.exp-company
+	{
+		font-size: 16px;
 	}
 
 	#edit-btn
