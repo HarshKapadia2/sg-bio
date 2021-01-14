@@ -151,17 +151,21 @@ section
 
 #edit-btn
 {
-	position: absolute;
-	bottom: 15vh;
-	right: 15vw;
-	color: #fafafa;
-	background-color: #1b1725;
-	padding: 0.5em 1em;
-	font-size: 17px;
-	border-radius: 50px;
-	border: 1px solid #1b1725;
-	box-shadow: 2px 2px 5px #bdbdbd;
+	position: fixed;
+	bottom: 12vh;
+	right: 13vw;
+	background-color: #eeeeee;
+	padding: 0.85em 0;
+	border-radius: 200px;
+	border: 1px solid #eeeeee;
+	box-shadow: 0 2px 5px #bdbdbd;
 	cursor: pointer;
+}
+
+#edit-btn img
+{
+	height: 3vh;
+	width: auto;
 }
 
 footer
@@ -205,6 +209,11 @@ footer
 	main
 	{
 		width: 80vw;
+	}
+
+	#edit-btn
+	{
+		right: 2vw;
 	}
 }
 
@@ -262,7 +271,7 @@ footer
 
 	#edit-btn
 	{
-		bottom: 13vh;
-		right: 10vw;
+		bottom: 12vh;
+		right: 4vw;
 	}
 }
