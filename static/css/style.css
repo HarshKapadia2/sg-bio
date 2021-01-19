@@ -64,10 +64,10 @@ body
 	position: absolute;
 	bottom: -0.7em;
 	right: -0.8em;
-	padding: 0.5em;
+	padding: 0.6em;
 	background-color: white;
-	border-radius: 500px;
-	border: 1px solid white;
+	border-radius: 20px;
+	border: 1px solid #eeeeee;
 	box-shadow: 0 2px 5px #bdbdbd;
 	cursor: pointer;
 }
@@ -79,7 +79,7 @@ body
 
 #avatar-upload-img
 {
-	height: 1.2em;
+	height: 20px;
 }
 
 #name
@@ -186,11 +186,13 @@ section
 
 #edit-btn
 {
+	display: grid;
+	place-items: center;
 	position: sticky;
 	bottom: 4vh;
 	left: 100vw;
 	background-color: white;
-	padding: 0.85em 1em;
+	padding: 1em;
 	border-radius: 30px;
 	border: 1px solid #eeeeee;
 	box-shadow: 0 2px 5px #bdbdbd;
@@ -200,7 +202,6 @@ section
 #edit-btn img
 {
 	height: 20px;
-	width: auto;
 }
 
 footer
