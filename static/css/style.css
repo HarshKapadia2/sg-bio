@@ -7,7 +7,7 @@
 
 a
 {
-	color: #fafafa;
+	color: white;
 }
 
 body
@@ -32,7 +32,8 @@ body
 #card
 {
 	width: 50vw;
-	padding: 1em 0;
+	padding: 1em 0 1.2em 0;
+	/* padding: 1em 0; */
 	margin-top: 5vh;
 	margin-bottom: 2vh;
 	border-radius: 5px;
@@ -42,13 +43,43 @@ body
 	box-shadow: 0 2px 5px #bdbdbd;
 }
 
-#card img
+#image-div
+{
+	position: relative;
+	margin: 0 1.5em 0 1em;
+}
+
+#avatar
 {
 	width: 15vh;
 	height: 15vh;
 	object-fit: cover;
-	margin: 0 1em;
 	border-radius: 5px;
+}
+
+#avatar-upload-div
+{
+	display: grid;
+	place-items: center;
+	position: absolute;
+	bottom: -0.7em;
+	right: -0.8em;
+	padding: 0.5em;
+	background-color: white;
+	border-radius: 500px;
+	border: 1px solid white;
+	box-shadow: 0 2px 5px #bdbdbd;
+	cursor: pointer;
+}
+
+#avatar-input
+{
+	display: none;
+}
+
+#avatar-upload-img
+{
+	height: 1.2em;
 }
 
 #name
@@ -71,8 +102,8 @@ body
 
 #calendar-btn, #e-mail-btn
 {
-	color: #fafafa;
-	background-color: #1b1725;
+	color: white;
+	background-color: black;
 	padding: 0.3em 0.6em;
 	margin-right: 0.5em;
 	font-size: 15px;
@@ -178,7 +209,7 @@ footer
 	width: 100vw;
 	display: grid;
 	place-items: center;
-	color: #fafafa;
+	color: white;
 	background-color: #1b1725;
 	padding: 0 0.5em;
 	text-align: center;
@@ -191,7 +222,7 @@ footer
 		height: 23vh;
 	}
 	
-	#card img
+	#avatar
 	{
 		height: 20vh;
 		width: 10vw;

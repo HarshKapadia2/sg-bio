@@ -12,6 +12,8 @@
 		<meta property="og:url" content="https://github.com/HarshKapadia2/sg-bio">
 		<meta property="og:image" content="https://res.cloudinary.com/harsh-kapadia/image/upload/v1610612532/sg_preview_3_w7z3sq.png">
 
+		<script defer src="static/js/script.js"></script>
+
 		<link rel="shortcut icon" href="static/img/sg_gray.svg" type="image/x-icon">
 
 		<link rel="stylesheet" href="static/css/style.css">
@@ -21,23 +23,28 @@
 
 	<body>
 		<div id="backdrop"></div>
-		
-		<div id="card">	
-			<img src="static/img/sg.jpg" alt="SG">
-			
+
+		<div id="card">
+			<div id="image-div">
+				<img id="avatar" src="static/img/sg.jpg" alt="SG">
+
+				<div id="avatar-upload-div">
+					<input type="file" name="avatar" id="avatar-input" accept=".png,.jpg,.jpeg">
+					<img id="avatar-upload-img" src="static/img/add_avatar.svg" alt="Img Upload">
+				</div>
+			</div>
+
 			<div id="details">
 				<div id="name">Selena Gomez</div>
-				
 				<div id="e-mail">selena@selenagomez.com</div>
-				
+
 				<div id="cta-btn-grp">
 					<button id="calendar-btn">Calendar</button>
-				
 					<a href="mailto:selena@selenagomez.com"><button id="e-mail-btn">e-mail</button></a>
 				</div>
 			</div>
 		</div>
-		
+
 		<main>
 			<section id="summary-section">
 				<div id="summary">A global artist who continues to impact her audience with frank and authentic conversations.</div>
@@ -48,19 +55,19 @@
 					<span class="section-title">Experience</span>
 					<div class="section-line"></div>
 				</div>
-				
+
 				<div class="exp">
 					<div class="exp-title">Recording Artist</div>
 					<div class="exp-company">Interscope Records</div>
 					<div class="exp-descp">An award-winning and celebrated pop artist with worldwide chart-topping albums like 'Rare' and 'Revival' among others. Gomez has six albums and seventeen singles. As a solo artist, Gomez has accumulated over 20 billion global streams.</div>
 				</div>
-				
+
 				<div class="exp">
 					<div class="exp-title">Actress</div>
 					<div class="exp-company">Hollywood</div>
 					<div class="exp-descp">Gomez starred in a lot of critically acclaimed movies like 'Monte Carlo', 'The Fundamentals of Caring' and 'Spring Breakers' among others.</div>
 				</div>
-				
+
 				<div class="exp">
 					<div class="exp-title">Producer</div>
 					<div class="exp-company">July Moon Productions, Inc.</div>
@@ -79,32 +86,32 @@
 					<div class="exp-descp">Giving back has always been an important element in Gomez's life. She joined Michelle Obama’s 'When We All Vote' for the 2020 US presedential elections. She works very closely with the 'We Movement'. She was named the youngest goodwill Ambassador for UNICEF at 18 years old and continues to work with them. Gomez also works very closely with 'A21', an non-profit organization seeking to eliminate human trafficking.</div>
 				</div>
 			</section>
-			
+
 			<section>
 				<div class="section-title-grp">
 					<span class="section-title">Discography</span>
 					<div class="section-line"></div>
 				</div>
-				
+
 				<div class="exp">
 					<div class="exp-title">Rare</div>
 					<div class="exp-descp">Earlier in 2021, Gomez released her critically acclaimed album RARE which debuted at No. 1 on the 'Billboard 200', her third consecutive studio album to debut atop the chart. The album has been met with widespread critical acclaim.</div>
 				</div>
-				
+
 				<div class="exp">
 					<div class="exp-title">Revival</div>
 					<div class="exp-descp">Gomez's second studio album was met with widespread critical acclaim.</div>
 				</div>
-				
+
 				<div class="exp">
 					<div class="exp-title">Singles</div>
 					<div class="exp-descp">Gomez has had seventeen mega-successful singles. Some of them are 'It Ain’t Me' with Kygo, 'Bad Liar', 'Fetish', 'Wolves' with Marshmello, 'I Can’t Get Enough' with Benny Blanco, J Balvin and Tainy and 'Back to You'</div>
 				</div>
 			</section>
-			
+
 			<button id="edit-btn"><img src="static/img/edit_pencil.svg" alt="Edit"></button>
 		</main>
-		
+
 		<footer>
 			<div>
 				<a href="https://github.com/HarshKapadia2/sg-bio" target="_blank" rel="noreferrer">GitHub repo</a> | Made with &#9829; by <a href="https://www.linkedin.com/in/harshgkapadia" target="_blank" rel="noreferrer">Harsh Kapadia</a>.
