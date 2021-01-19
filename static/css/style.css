@@ -101,7 +101,8 @@ section
 
 #summary
 {
-	background-color: #eeeeee;
+	border: 1px solid #e0e0e0;
+	box-shadow: 0 2px 5px #eeeeee;
 	padding: 0.5em;
 	border-radius: 5px;
 }
