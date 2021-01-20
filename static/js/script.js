@@ -1,5 +1,7 @@
 const avatarUpload = document.querySelector("#avatar-upload-div");
+const avatar = document.querySelector("#avatar");
 const avatarInput = document.querySelector("#avatar-input");
+const backdrop = document.querySelector("#backdrop");
 
 avatarUpload.addEventListener("click", () => avatarInput.click());
 
@@ -10,9 +12,11 @@ avatarInput.addEventListener
 	{
 		const base64Img = await getBase64(avatarInput.files[0]);
 		console.log(base64Img);
+		avatar.src = base64Img;
 
 		const dominantColour = await getDominantColour(base64Img);
-		console.log("The dominant colour in uploaded image is RGB(" + dominantColour + ").");
+		console.log("The dominant colour in uploaded image is rgb(" + dominantColour + ").");
+		backdrop.style.backgroundColor = `rgb(${dominantColour[0]}, ${dominantColour[1]}, ${dominantColour[2]})`;
 	}
 );
 
