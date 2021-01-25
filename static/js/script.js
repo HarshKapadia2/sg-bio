@@ -34,7 +34,15 @@ if(navigator.serviceWorker)
 		}
 	);
 
-	pwaInstallBtn.addEventListener("click", () => pwaInstallEvent.prompt());
+	pwaInstallBtn.addEventListener
+	(
+		"click",
+		() =>
+		{
+			pwaInstallEvent.prompt();
+			pwaInstallDiv.classList.add("hidden");
+		}
+	);
 
 	pwaInstallDismiss.addEventListener("click", () => dismissPWAInstallPrompt());
 }
