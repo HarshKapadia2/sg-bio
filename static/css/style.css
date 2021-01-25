@@ -85,12 +85,13 @@ body
 {
 	font-size: 30px;
 	word-break: break-all;
+	margin-right: 0.5em;
 }
 
 #e-mail
 {
 	font-size: 18px;
-	margin-bottom: 1em;
+	margin: 0 1em 1em 0;
 	word-break: break-all;
 }
 
