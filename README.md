@@ -6,8 +6,10 @@
   <i>A PWA showcasing Selena Gomez's work.</i>
   <br />
   Hosted at https://harshkapadia2.github.io/sg-bio/
+  <br />
+  <br />
+  Design inspiration: <a href="https://www.linkedin.com/in/aayush-pal/">Aayush Pal</a>
+  <br />
+  Technical help: <a href="https://gitlab.com/KartikSoneji">Kartik Soneji</a>
 </p>
 
-Design inspiration: [Aayush Pal](https://www.linkedin.com/in/aayush-pal/)
-
-Technical help: [Kartik Soneji](https://gitlab.com/KartikSoneji)
