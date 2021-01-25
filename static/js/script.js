@@ -3,6 +3,21 @@ const avatar = document.querySelector("#avatar");
 const avatarInput = document.querySelector("#avatar-input");
 const backdrop = document.querySelector("#backdrop");
 
+if(navigator.serviceWorker)
+{
+	window.addEventListener
+	(
+		"load",
+		() =>
+		{
+			navigator.serviceWorker
+				.register("sw.js")
+				.then((reg) => console.log("Service Worker registered!"))
+				.catch((err) => console.error(`Service Worker error: ${err}`));
+		}
+	);
+}
+
 avatarUpload.addEventListener("click", () => avatarInput.click());
 
 avatarInput.addEventListener
@@ -51,7 +66,7 @@ async function getDominantColour(base64Str)
 				"load",
 				() =>
 				{
-					const colorThief = new ColorThief();
+					const colorThief = new ColorThief(); // From ./color_thief_2.3.2.umd.js
 					resolve(colorThief.getColor(img));
 				}
 			);
