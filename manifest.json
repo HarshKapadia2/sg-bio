@@ -2,7 +2,7 @@
 	"name": "Selena Gomez's Bio",
 	"short_name": "SG's Bio",
 	"scope": ".",
-	"start_url": "/sg-bio",
+	"start_url": "/sg-bio/",
 	"theme_color": "#1b1725",
 	"background_color": "#ffffff",
 	"display": "standalone",
