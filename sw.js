@@ -53,7 +53,7 @@ self.addEventListener
 
 					return response;
 				}
-			).catch((err) => caches.match(e.request).then((response) => response))
+			).catch((err) => caches.match(e.request.url).then((response) => response))
 		);
 	}
 );
