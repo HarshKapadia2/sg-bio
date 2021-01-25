@@ -1,7 +1,14 @@
+const body = document.querySelector("body");
 const avatarUpload = document.querySelector("#avatar-upload-div");
 const avatar = document.querySelector("#avatar");
 const avatarInput = document.querySelector("#avatar-input");
 const backdrop = document.querySelector("#backdrop");
+const pwaInstallDiv = document.querySelector(".pwa-install-div");
+const pwaInstallBtn = document.querySelector("#pwa-install-btn");
+const pwaInstallDismiss = document.querySelector("#pwa-install-dismiss");
+
+let pwaInstallEvent;
+
 
 if(navigator.serviceWorker)
 {
@@ -15,6 +22,21 @@ if(navigator.serviceWorker)
 				.catch((err) => console.error(`Service Worker error: ${err}`));
 		}
 	);
+
+	window.addEventListener
+	(
+		"beforeinstallprompt",
+		(e) =>
+		{
+			e.preventDefault();
+			pwaInstallEvent = e;
+			showPWAInstallPrompt();
+		}
+	);
+
+	pwaInstallBtn.addEventListener("click", () => pwaInstallEvent.prompt());
+
+	pwaInstallDismiss.addEventListener("click", () => dismissPWAInstallPrompt());
 }
 
 avatarUpload.addEventListener("click", () => avatarInput.click());
@@ -31,6 +53,7 @@ avatarInput.addEventListener
 		backdrop.style.backgroundColor = `rgb(${dominantColour[0]}, ${dominantColour[1]}, ${dominantColour[2]})`;
 	}
 );
+
 
 async function getBase64(file)
 {
@@ -69,4 +92,16 @@ async function getDominantColour(base64Str)
 			);
 		}
 	);
+}
+
+function showPWAInstallPrompt()
+{
+	pwaInstallDiv.classList.remove("hidden");
+	pwaInstallDiv.classList.add("pwa-install-div-summon");
+}
+
+function dismissPWAInstallPrompt()
+{
+	pwaInstallDiv.classList.add("pwa-install-div-dismiss");
+	setTimeout(() => pwaInstallDiv.classList.add("hidden"), 2000);
 }

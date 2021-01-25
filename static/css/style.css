@@ -33,7 +33,6 @@ body
 {
 	width: 50vw;
 	padding: 1em 0 1.2em 0;
-	/* padding: 1em 0; */
 	margin-top: 5vh;
 	margin-bottom: 2vh;
 	border-radius: 5px;
@@ -100,7 +99,7 @@ body
 	margin-top: 0.5em;
 }
 
-#calendar-btn, #e-mail-btn
+#calendar-btn, #e-mail-btn, #pwa-install-btn
 {
 	color: white;
 	background-color: black;
@@ -108,7 +107,7 @@ body
 	margin-right: 0.5em;
 	font-size: 15px;
 	border-radius: 5px;
-	border: 1px solid #1b1725;
+	border: 1px solid black;
 	box-shadow: 0px 2px 3px #bdbdbd;
 	cursor: pointer;
 }
@@ -204,6 +203,69 @@ section
 	height: 20px;
 }
 
+.pwa-install-div
+{
+	position: fixed;
+	bottom: 2.5vh;
+	left: 2vw;
+	display: flex;
+	align-items: center;
+	background-color: white;
+	padding: 0.5em;
+	box-shadow: 0 2px 5px #bdbdbd;
+	border-radius: 5px;
+}
+
+#pwa-install-btn
+{
+	margin: 0 0.8em 0 0.5em;
+}
+
+#pwa-install-dismiss
+{
+	background-color: transparent;
+	border: none;
+	display: grid;
+	place-items: center;
+	cursor: pointer;
+}
+
+.pwa-install-div-summon
+{
+	animation: 3s ease summon-div;
+}
+
+@keyframes summon-div
+{
+	from
+	{
+		transform: translateX(-100vw);
+	}
+
+	to
+	{
+		transform: translateX(0);
+	}
+}
+
+.pwa-install-div-dismiss
+{
+	animation: 2s ease dismiss-div;
+}
+
+@keyframes dismiss-div
+{
+	from
+	{
+		transform: translateX(0);
+	}
+
+	to
+	{
+		transform: translateX(-100vw);
+	}
+}
+
 footer
 {
 	height: 10vh;
@@ -214,6 +276,11 @@ footer
 	background-color: #1b1725;
 	padding: 0 0.5em;
 	text-align: center;
+}
+
+.hidden
+{
+	display: none;
 }
 
 @media screen and (orientation: landscape) and (max-width: 870px)

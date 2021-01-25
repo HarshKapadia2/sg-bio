@@ -1,4 +1,4 @@
-const cacheName = "v3";
+const cacheName = "v4";
 const cacheAssets = [
 	"./",
 	"./index.html",
@@ -6,6 +6,7 @@ const cacheAssets = [
 	"./static/img/add_avatar.svg",
 	"./static/img/edit_pencil.svg",
 	"./static/img/sg_gray.svg",
+	"./static/img/clear_cross.svg",
 	"./static/img/sg.jpg",
 	"./static/js/color_thief_2.3.2.umd.js",
 	"./static/js/script.js"
