@@ -20,15 +20,9 @@ self.addEventListener
 		e.waitUntil
 		(
 			caches.open(cacheName)
-			.then
-			(
-				(cache) => 
-				{
-					console.log("Service Worker caching!");
-					cache.addAll(cacheAssets);
-				}
-			).then(() => self.skipWaiting())
-			.catch((err) => console.error(`Cache error: ${err}`))
+				.then((cache) => cache.addAll(cacheAssets))
+				.then(() => self.skipWaiting())
+				.catch((err) => console.error(`Cache error: ${err}`))
 		);
 	}
 );
@@ -79,10 +73,7 @@ self.addEventListener
 
 					// Add response to cache
 					if(e.request.url.indexOf('http') === 0)
-					{
-						console.log("Service Worker caching!");
 						caches.open(cacheName).then((cache) => cache.put(e.request, resClone));
-					}
 
 					return response;
 				}

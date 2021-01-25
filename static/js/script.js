@@ -12,7 +12,6 @@ if(navigator.serviceWorker)
 		{
 			navigator.serviceWorker
 				.register("sw.js")
-				.then((reg) => console.log("Service Worker registered!"))
 				.catch((err) => console.error(`Service Worker error: ${err}`));
 		}
 	);
@@ -26,11 +25,9 @@ avatarInput.addEventListener
 	async () =>
 	{
 		const base64Img = await getBase64(avatarInput.files[0]);
-		console.log(base64Img);
 		avatar.src = base64Img;
 
 		const dominantColour = await getDominantColour(base64Img);
-		console.log("The dominant colour in uploaded image is rgb(" + dominantColour + ").");
 		backdrop.style.backgroundColor = `rgb(${dominantColour[0]}, ${dominantColour[1]}, ${dominantColour[2]})`;
 	}
 );
