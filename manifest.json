@@ -2,20 +2,20 @@
 	"name": "Selena Gomez's Bio",
 	"short_name": "SG's Bio",
 	"scope": "/",
-	"start_url": "/",
+	"start_url": "/sg-bio",
 	"theme_color": "#1b1725",
 	"background_color": "#ffffff",
 	"display": "standalone",
 	"orientation": "portrait",
 	"icons": [
 		{
-			"src": "/static/img/icon-192x192.png",
+			"src": "/sg-bio/static/img/icon-192x192.png",
 			"type": "image/png",
 			"sizes": "192x192",
 			"purpose": "any maskable"
 		},
 		{
-			"src": "/static/img/icon-512x512.png",
+			"src": "/sg-bio/static/img/icon-512x512.png",
 			"type": "image/png",
 			"sizes": "512x512",
 			"purpose": "any maskable"
