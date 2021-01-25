@@ -1,4 +1,4 @@
-const cacheName = "sg-bio-v1";
+const cacheName = "sg-bio-v2";
 
 self.addEventListener
 (
