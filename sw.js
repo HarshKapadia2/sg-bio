@@ -1,4 +1,37 @@
-const cacheName = "sg-bio-v2";
+const cacheName = "v3";
+const cacheAssets = [
+	"./",
+	"./index.html",
+	"./static/css/style.css",
+	"./static/img/add_avatar.svg",
+	"./static/img/edit_pencil.svg",
+	"./static/img/sg_gray.svg",
+	"./static/img/sg.jpg",
+	"./static/js/color_thief_2.3.2.umd.js",
+	"./static/js/script.js"
+];
+
+self.addEventListener
+(
+	"install",
+	(e) =>
+	{
+		// Cache files
+		e.waitUntil
+		(
+			caches.open(cacheName)
+			.then
+			(
+				(cache) => 
+				{
+					console.log("Service Worker caching!");
+					cache.addAll(cacheAssets);
+				}
+			).then(() => self.skipWaiting())
+			.catch((err) => console.error(`Cache error: ${err}`))
+		);
+	}
+);
 
 self.addEventListener
 (
