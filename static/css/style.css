@@ -17,6 +17,7 @@ body
 	align-items: center;
 	position: relative;
 	overflow-x: hidden;
+	background-color: white;
 }
 
 #backdrop
